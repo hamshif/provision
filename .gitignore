@@ -1,0 +1,29 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains - PyCharm, IntelliJ, etc.
+.idea/
+__pycache__/
+*.iml
+
+# Compiled files
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+**/*.pyc
+**/gce_creds.json
+**/*.log
+
+# Module directory
+.terraform/
+
+# statefiles
+*.tfstate.*
+
+# plan files
+tfplan
+
+terraform.tfvars
+
