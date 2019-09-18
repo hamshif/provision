@@ -57,12 +57,12 @@ variable subnetwork {
 variable host_suffix {
   type        = "string"
   description = "DNS host suffix/domain"
-  default     = "gcp-np.marketo.org"
+  default     = "gcp-np.wielder.org"
 }
 
 variable location_code {
   type        = "string"
-  description = "A Marketo code representing a single character for the type of physical location ('g' for Google cloud, 'm' for Marketo datacenters) plus a short string indicating zone or location (e.x. gusw1, guse1, gase1, etc...). This will be used as the first segment of the machine's hostname"
+  description = "A wielder code representing a single character for the type of physical location ('g' for Google cloud, 'm' for wielder datacenters) plus a short string indicating zone or location (e.x. gusw1, guse1, gase1, etc...). This will be used as the first segment of the machine's hostname"
 }
 
 variable cluster_id {
@@ -147,7 +147,7 @@ variable extra_tags {
 
 variable internal_hosts {
   type        = "string"
-  description = "Comma-separated list of Marketo on-prem hosts to be added to /etc/hosts"
+  description = "Comma-separated list of wielder on-prem hosts to be added to /etc/hosts"
   default     = ""
 }
 
@@ -170,7 +170,7 @@ variable locator_cluster_name {
 }
 
 variable "enable_set_dns" {
-  description = "Flag to enable registering with Marketo DNS via set_dns script/function"
+  description = "Flag to enable registering with wielder DNS via set_dns script/function"
   default     = "false"
 }
 
